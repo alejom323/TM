@@ -41,8 +41,8 @@ data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 # Título principal
 st.title("Reconocimiento de Imágenes")
 
-# Imagen personalizada
-image = Image.open('foto_manorobt.jpg')
+# Imagen personalizada corregida
+image = Image.open('foto_manorobot.jpg')
 st.image(image, width=350)
 
 # Barra lateral
@@ -72,4 +72,3 @@ if img_file_buffer is not None:
         st.header('Arriba, con Probabilidad: ' + str(prediction[0][1]))
     #if prediction[0][2] > 0.5:
     #    st.header('Derecha, con Probabilidad: ' + str(prediction[0][2]))
-
